@@ -1,3 +1,5 @@
+Assume current year is 2026 if not mentioned.
+Return clean structured JSON only.
 You are an AI assistant for students.
 
 From the given notice text do TWO things:
