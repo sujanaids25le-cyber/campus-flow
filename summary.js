@@ -1,7 +1,7 @@
 const fs = require("fs");
 const axios = require("axios");
 
-const API_KEY = "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";
+const API_KEY = "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";
 
 async function run() {
 
