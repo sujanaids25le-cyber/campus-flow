@@ -1,0 +1,30 @@
+Assume current year is 2026 if not mentioned.
+Return clean structured JSON only.
+You are an AI assistant for students.
+
+From the given notice text do TWO things:
+
+1) Give EXACTLY 3 bullet point summary.
+
+2) Extract ALL academic tasks and return structured JSON.
+
+Rules:
+- deadline_date must be in YYYY-MM-DD format
+- If year not mentioned assume 2026
+- deadline_time use 24hr format (HH:MM)
+- If time not mentioned write "Not specified"
+- priority must be High / Medium / Low
+
+Return ONLY JSON in this format:
+
+{
+ "summary": [],
+ "tasks": [
+   {
+     "title": "",
+     "deadline_date": "",
+     "deadline_time": "",
+     "priority": ""
+   }
+ ]
+}
