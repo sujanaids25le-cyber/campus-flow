@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #020617, black);
+  color: white;
+  overflow: hidden;
+}
+
+/* space background */
+
+.space {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* floating glass card */
+
+.floatingCard {
+  width: 360px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(25px);
+  text-align: center;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 0 60px rgba(255,0,120,0.4);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px);}
+  50% { transform: translateY(-20px);}
+  100% { transform: translateY(0px);}
+}
+
+input, textarea {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  background: black;
+  border: 1px solid #333;
+  border-radius: 12px;
+  color: white;
+}
+
+button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #ff003c, #ff00c8);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* dashboard */
+
+.dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.glassNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.03);
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.noticeBox {
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.taskArea {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.taskCard {
+  width: 240px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+  animation: float 5s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(255,0,120,0.3);
+}
+
+.taskCard span {
+  color: hotpink;
+  font-weight: bold;
+}
